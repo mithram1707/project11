@@ -1,0 +1,37 @@
+/*11. Develop an Image Gallery Website 
+o Create a responsive image gallery with categories and search functionality. 
+o Use HTML to structure the content, CSS to style the website, and 
+JavaScript to add interactive elements. 
+o Make at least five git commits, ensuring each commit reflects significant 
+progress 
+o Host the website on GitHub Pages. */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📷 Image Gallery</h1>
+
+    <div class="controls">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="nature">Nature</option>
+        <option value="city">City</option>
+        <option value="animals">Animals</option>
+      </select>
+      <input type="text" id="searchBox" placeholder="Search images..." />
+    </div>
+
+    <div class="gallery" id="gallery">
+      <!-- Images will be inserted here by JS -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
